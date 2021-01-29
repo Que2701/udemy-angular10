@@ -1,0 +1,17 @@
+<form>
+    <div>
+        <label for="userName">Username:</label>   
+        <input [(ngModel)]="userName" (input)="updateInputValue()" class="form-control" type="text" id="userName" name="userName">
+    </div>
+    <hr/>
+    <div>
+        <label>Username is: {{userName}}</label>
+    </div>
+    <div>   
+        <button [disabled]="userName === ''" (click)="updateUserName()" class="btn btn-primary">
+            Update
+        </button>
+        <hr>
+        <label>{{userNameStatusUpdate}}</label>
+    </div>
+</form>

@@ -11,7 +11,6 @@ export class AppComponent {
   displayButtonClicksCounter = 0;
 
   constructor(){
-
   }
 
   DisplaySettingsClick(){
